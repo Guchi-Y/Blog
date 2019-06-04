@@ -6,3 +6,18 @@ h1,h2,h3,h4,h5,h6,p,a,body,input,textarea,form{
 body{
   background-color: black;
 }
+
+.header_ber{
+  height: 100px;
+  width: 100%;
+  border-bottom: 4px solid white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.header_logo{
+  font-size: 45px;
+  margin: 0 auto;
+}
