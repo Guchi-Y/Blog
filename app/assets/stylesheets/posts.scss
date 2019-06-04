@@ -1,13 +1,15 @@
 h1,h2,h3,h4,h5,h6,p,a,body,input,textarea,form{
   color: white;
   font-family: PixelMplus10-Regular;
+  text-decoration: none;
 }
 
-body{
+body,input{
   background-color: black;
 }
 
 header{
+  background-color: black;
   height: 100px;
   width: 100%;
   border-bottom: 4px solid white;
@@ -20,6 +22,7 @@ header{
 .header_logo{
   font-size: 50px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .header_button{
@@ -28,9 +31,12 @@ header{
 
 .button{
   font-size: 20px;
-  text-decoration: none;
   border: 3px solid white;
   padding: 5px;
   margin: 0 10px;
   cursor: pointer;
+}
+
+.contents{
+  padding-top: 100px;
 }
