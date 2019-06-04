@@ -10,9 +10,18 @@
 
   <body>
     <header>
-      <div class="header_ber">
         <h1 class="header_logo">ぶろぐ</h1>
-      </div>  
+      <% if user_signed_in? %>
+        <div class="header_button">
+          <%= link_to "とうこう", "/posts/new", class: "button" %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "button" %>
+        </div>  
+      <% else %>
+        <div class="header_button">
+          <%= link_to "ログイン", new_user_session_path, class: "button" %>
+          <%= link_to "とうろく", new_user_registration_path, class: "button"%>
+        </div>  
+      <% end %>
     </header>
     <%= yield %>
   </body>
