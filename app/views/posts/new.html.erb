@@ -1,0 +1,7 @@
+<div class="contents">
+  <h1>とうこうする</h1>
+  <%= form_with(model: Post.new, local: true) do |f| %>
+    <%= f.label :とうこう %><br />
+    <%= f.text_area :text, placeholder:"なにかかいて", style: 'width: 100%; height: 300px;' %>
+  <% end %>
+</div>
