@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   devise_for :users
   root 'posts#index'
   get  'posts' => 'posts#index'
-  post 'posts' => 'posts#new'
+  get  'posts/new' => 'posts#new'
 end
