@@ -4,7 +4,6 @@ class PostsController < ApplicationController
   end 
 
   def new
-    @post = Post.find(current_user.id)
   end
 end
 
