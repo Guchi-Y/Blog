@@ -18,8 +18,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    post = Post.find(params[:post][:id])
-    post.update(post_params)
+    Post.find(params[:post][:id]).update(post_params)
   end
 
   private
