@@ -17,6 +17,11 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def update
+    post = Post.find(params[:post][:id])
+    post.update(post_params)
+  end
+
   private
   def post_params
     params.require(:post).permit(:text).merge(user_id: current_user.id)

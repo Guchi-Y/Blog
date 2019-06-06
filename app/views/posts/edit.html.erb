@@ -1,7 +1,8 @@
 <div class="contents">
   <h1>とうこうをへんしゅう</h1>
   <%= form_for(@post, url: posts_path) do |f| %>
-     <%= f.text_area :text, style: 'width: 100%; height: 300px;' %>
-     <%= f.submit :class => "button", :value => "かんりょう" %>
+    <%= f.text_area :text, style: 'width: 100%; height: 300px;' %>
+    <%= f.submit :class => "button", :value => "かんりょう" %>
+    <%= f.hidden_field :id, :value => @post.id %>
   <% end %>
 </div>
