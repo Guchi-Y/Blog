@@ -21,6 +21,11 @@ class PostsController < ApplicationController
     Post.find(params[:post][:id]).update(post_params)
   end
 
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy if post.user_id == current_user.id
+  end
+  
   private
   def post_params
     params.require(:post).permit(:text).merge(user_id: current_user.id)
