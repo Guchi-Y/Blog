@@ -10,13 +10,15 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(text: params[:post][:text], user_id: current_user.id)
+    Post.create(post_params)
   end
 
   private
+  def post_params
+    params.require(:post).permit(:text).merge(user_id: current_user.id)
+  end
+
   def move_to_index
     redirect_to action: :index unless user_signed_in?
   end  
 end
-
-
