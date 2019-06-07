@@ -2,4 +2,11 @@
   <% @posts.each do |post| %>
     <%= render partial: "post", locals: { post: post }%>
   <% end %>
-</div>
+  <script>
+    $('.delete_button').click(function(){
+      if(!confirm('本当に削除しますか？')){
+        return false;
+      }
+    });
+</script>
+</div> 
