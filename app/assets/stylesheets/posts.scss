@@ -1,14 +1,14 @@
-h1,h2,h3,h4,h5,h6,p,a,body,input,textarea,form{
+h1,h2,h3,h4,h5,h6,p,a,body,input,textarea,form {
   color: white;
   font-family: PixelMplus10-Regular;
   text-decoration: none;
 }
 
-body,input{
+body,input {
   background-color: black;
 }
 
-header{
+header {
   background-color: black;
   height: 100px;
   width: 100%;
@@ -19,17 +19,23 @@ header{
   z-index: 1;
 }
 
-.header_logo{
+#new_edit_display {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+.header_logo {
   font-size: 50px;
   margin-left: auto;
   cursor: pointer;
 }
 
-.header_button{
+.header_button {
   margin-left: auto;
 }
 
-.button, .delete_button{
+.button, .delete_button {
   font-size: 20px;
   border: 3px solid white;
   padding: 5px;
@@ -37,12 +43,12 @@ header{
   cursor: pointer;
 }
 
-.contents{
+.contents {
   padding-top: 100px;
   margin: 0 80px;
 }
 
-.post_area,textarea{
+.post_area,textarea {
   background-color: black;
   font-size: 18px;
   min-height: 100px;
@@ -52,19 +58,45 @@ header{
   line-height: 1.5;
 }
 
-.post_button{
+.post_button {
   height: 50px;
 }
 
-.confirmation{
+.confirmation {
   text-align:center;
 }
 
-.confirmation h1{
+.confirmation h1 {
   margin: 70px 0;
 }
 
-.sign_up_form, .log_in_form{
+.sign_up_form, .log_in_form {
   font-size: 27px;
   text-align:center;
+}
+
+.edit_logo, .new_post_logo {
+  position: absolute;
+  top: 110px;
+  z-index: -1;
+}
+
+.edit_button, .new_post_button {
+  font-size: 20px;
+  border: 3px solid white;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 70%;
+  cursor: pointer;
+}
+
+.new_post_textarea, .edit_textarea {
+  height: 50vh;
+  width: 100%;
+  background-color: black;
+  font-size: 18px;
+  border: 3px solid white;
+  margin: 30px 0 25vh 0;
+  padding: 0 20px;
+  line-height: 1.5;
 }

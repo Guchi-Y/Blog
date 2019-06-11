@@ -3,7 +3,6 @@
   <head>
     <title>Blog</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -15,7 +14,7 @@
         </h1>
       <% if user_signed_in? %>
         <div class="header_button">
-          <%= link_to "とうこう", "/posts/new", class: "button" %>
+          <%= link_to "とうこう", "/posts/new", class: "button", remote: true %>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "button" %>
         </div>  
       <% else %>
@@ -25,6 +24,8 @@
         </div>  
       <% end %>
     </header>
+      <div id = "new_edit_display"></div>
     <%= yield %>
   </body>
+
 </html>
