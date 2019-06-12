@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>ぶろぐ</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -9,23 +9,21 @@
 
   <body>
     <header>
-        <h1 class="header_logo">
+        <h1 class = "header_logo">
           <%= link_to "ぶろぐ","/" %>
         </h1>
       <% if user_signed_in? %>
-        <div class="header_button">
+        <div class = "header_button">
           <%= link_to "とうこう", "/posts/new", class: "button", remote: true %>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "button" %>
         </div>  
       <% else %>
-        <div class="header_button">
+        <div class = "header_button">
           <%= link_to "ログイン", new_user_session_path, class: "button" %>
           <%= link_to "とうろく", new_user_registration_path, class: "button"%>
         </div>  
       <% end %>
     </header>
-      <div id = "new_edit_display"></div>
     <%= yield %>
   </body>
-
 </html>

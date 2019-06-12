@@ -1,7 +1,6 @@
-<div class="contents">
-  <h1 class="new_post_logo">とうこうをかく</h1>
+  <h1 class = "new_post_logo">とうこうをかく</h1>
   <%= form_for(@post) do |f| %>
      <%= f.submit :class => "new_post_button", :value => "とうこうする" %>
      <%= f.text_area :text, placeholder: "なにかかいてね", class: "new_post_textarea" %>
   <% end %>
-</div>
+  <script>$('.new_post_textarea').focus();</script>
