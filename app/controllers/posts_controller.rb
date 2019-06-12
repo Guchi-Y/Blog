@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
+    redirect_to root_path unless (Post.create(post_params)).save
   end
 
   def edit
