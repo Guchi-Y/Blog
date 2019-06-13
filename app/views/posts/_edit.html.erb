@@ -1,7 +1,7 @@
   <h1 class = "edit_logo">へんしゅうする</h1>
   <%= form_for(@post, url: posts_path) do |f| %>
     <% if current_user.id == @post.user_id %>
-      <%= f.submit :class => "edit_button", :value => "かんりょう" %>
+      <%= f.submit :class => "complet_button", :value => "かんりょう" %>
     <% end %>
     <%= f.text_area :text, class: "edit_textarea" %>
     <%= f.hidden_field :id, :value => @post.id %>

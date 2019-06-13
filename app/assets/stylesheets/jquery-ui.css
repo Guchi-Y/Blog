@@ -1,0 +1,47 @@
+//= require jquery-ui/all
+
+.wkDialogClass {
+  background-color: white;
+  font-family: PixelMplus10-Regular;
+  font-size: 18px;
+}
+
+.wkDialogClass .ui-dialog-titlebar {
+  color:white;
+  background:black;
+  border: none;
+}
+
+.wkDialogClass .ui-dialog-content {
+  color:white;
+  background:black;
+  margin-top: 3px; 
+}
+
+.wkDialogClass .ui-dialog-buttonpane {
+  background:black;
+  margin-top: 2px; 
+}
+
+.wkBtnOk {
+  color:white;
+  background:black;
+}
+
+.wkBtnNg {
+  color:white;
+  background:black;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: PixelMplus10-Regular;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.ui-corner-all{
+  border-radius: 0;
+  border: 2.5px solid white;
+}

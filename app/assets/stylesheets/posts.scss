@@ -30,7 +30,7 @@ header {
   margin-left: auto;
 }
 
-.button, .delete_button {
+.button, .delete_button, .edit_button {
   font-size: 20px;
   border: 3px solid white;
   padding: 5px;
@@ -76,7 +76,7 @@ header {
   z-index: -1;
 }
 
-.edit_button, .new_post_button {
+.complet_button, .new_post_button {
   font-size: 20px;
   border: 3px solid white;
   padding: 5px;
