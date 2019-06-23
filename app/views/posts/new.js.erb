@@ -1,1 +1,1 @@
-$(".contents").html("<%= j(render "new")%>")
+$(".contents").html("<%= escape_javascript(render "new")%>")

@@ -7,7 +7,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body data-turbolinks="false">
     <header>
         <h1 class = "header_logo">
           <%= link_to "ぶろぐ","/" %>
@@ -26,4 +26,8 @@
     </header>
     <%= yield %>
   </body>
+  <div id="dl" style="display:none;">
+    <span class="ui-helper-hidden-accessible"><input type="image"/></span>
+    <p>ほんとうに けしますか？</p>
+  </div>
 </html>
