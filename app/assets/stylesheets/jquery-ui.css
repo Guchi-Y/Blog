@@ -1,8 +1,10 @@
-//= require jquery-ui/all
+/*
+*= require jquery-ui/all
+*/
 
 .wkDialogClass {
   background-color: white;
-  font-family: PixelMplus10-Regular;
+  font-family: "PixelMplus10-Regular";
   font-size: 18px;
 }
 
@@ -34,7 +36,7 @@
 }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-  font-family: PixelMplus10-Regular;
+  font-family: "PixelMplus10-Regular";
 }
 
 .ui-widget.ui-widget-content {
