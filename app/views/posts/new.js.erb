@@ -1,7 +1,1 @@
-$(".contents").html(`<h1 class = "new_post_logo">とうこうをかく</h1>
-                      <%= form_for(@post, remote: true) do |f| %>
-                      <%= f.submit :class => "new_post_button", :value => "とうこうする" %>
-                      <%= f.text_area :text, placeholder: "なにかかいてね", class: "new_post_textarea" %>
-                      <% end %>
-                      
-                      <script>$('.new_post_textarea').focus();</script>`)
+$(".contents").html("<%= escape_javascript(render "new")%>")
