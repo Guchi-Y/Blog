@@ -16,3 +16,8 @@
  /*
  *= require jquery-ui
  */
+ 
+ @font-face{
+  font-family: "PixelMplus10-Regular";
+  src: url('PixelMplus10-Regular') format('truetype');
+ }
