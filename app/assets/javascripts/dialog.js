@@ -1,10 +1,10 @@
 $(function() {
   var html = `<div class="confirmation">
-  <h1>
-  とうこうが さくじょ されました
-  </h1>
-  <a class="button" href="/">とうこうがめんへ</a>
-  </div>`
+                <h1>
+                とうこうが さくじょ されました
+                </h1>
+                <a id="return_index_button" class="button" href="/">とうこうがめんへ</a>
+              </div>`
   
   $(".delete_button").on("click", function() {
     var postId   =  $(this).attr("data-post-id");
