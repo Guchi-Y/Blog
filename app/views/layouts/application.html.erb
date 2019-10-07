@@ -14,7 +14,7 @@
         </h1>
       <% if user_signed_in? %>
         <div class = "header_button">
-          <%= link_to "とうこう", "/posts/new", class: "button", remote: true %>
+          <%= link_to "とうこう", posts_new_path, class: "button", remote: true %>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "button" %>
         </div>  
       <% else %>
